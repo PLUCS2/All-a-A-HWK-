@@ -1,0 +1,75 @@
+.topping {
+    display: flex; 
+    justify-content: space-around; 
+    flex-direction: row; 
+    align-items: center; 
+}
+
+.user {
+    position: absolute; 
+    color: white; 
+    font-size: 30px; 
+    padding-left: 40px; 
+    padding-top: 20px; 
+    text-shadow: 2px 2px black; 
+}
+
+.inners {
+    border: 1px solid black; 
+    color: black; 
+    font-family: 'Courier New', Courier, monospace; 
+    padding: 10px;
+}
+
+.inners:hover {
+    border: 1px solid black; 
+    color: black; 
+    font-family: 'Courier New', Courier, monospace; 
+    margin: 5px; 
+    background-color: grey; 
+}
+
+.signers {
+    border: 1px solid black; 
+    color: black; 
+    font-family: 'Courier New', Courier, monospace; 
+    padding: 8px; 
+}
+
+.signers:hover {
+    border: 1px solid black; 
+    color: black; 
+    font-family: 'Courier New', Courier, monospace; 
+    margin: 5px; 
+    background-color: grey; 
+}
+
+.butters {
+    display: flex; 
+    justify-content: space-between; 
+    width: 500px; 
+
+}
+
+.titling {
+    position: absolute; 
+    padding-left: 500px; 
+    padding-right: 500px; 
+    padding-top: 370px; 
+    text-align: center; 
+    text-shadow: 1px 1px white; 
+}
+
+
+.pic {
+    position: absolute; 
+    width: 50%; 
+    height: 100%; 
+    z-index: 1; 
+    padding-top: 50px; 
+    padding-left: 700px; 
+}
+
+.notes {
+    
+}
