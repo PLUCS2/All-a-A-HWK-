@@ -1,9 +1,9 @@
 var path = require('path');
 
 module.exports = {
-    entry: './frontend/app.jsx', // any time you edit this file, re-start webpack
+    entry: './app.jsx', // any time you edit this file, re-start webpack
     output: {
-        path: path.resolve(__dirname, 'app', 'assets', 'javascript'),
+        path: path.resolve(__dirname, ''),
         filename: 'bundle.js'
     },
     resolve: {
