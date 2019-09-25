@@ -136,8 +136,9 @@ __webpack_require__.r(__webpack_exports__);
 
 var GiphysIndex = function GiphysIndex(_ref) {
   var giphys = _ref.giphys;
-  // debugger; 
+  debugger; // debugger; 
   // let gyph = giphys.giphys.map(giphy => < GiphysIndexItem key={giphy.id} giphy={giphy} />)
+
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("ul", null, giphys.map(function (giphy) {
     return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_giphys_index_item__WEBPACK_IMPORTED_MODULE_1__["default"], {
       giphy: giphy
@@ -223,8 +224,8 @@ function (_React$Component) {
       search: 'cats'
     };
     _this.handleChange = _this.handleChange.bind(_assertThisInitialized(_assertThisInitialized(_this)));
-    _this.handleSubmit = _this.handleSubmit.bind(_assertThisInitialized(_assertThisInitialized(_this)));
-    _this.giphys = [];
+    _this.handleSubmit = _this.handleSubmit.bind(_assertThisInitialized(_assertThisInitialized(_this))); // this.giphys = []; 
+
     return _this;
   }
 
@@ -245,10 +246,7 @@ function (_React$Component) {
     value: function handleSubmit(e) {
       e.preventDefault();
       var term = this.state.search.split('').join('+');
-      this.props.fetchSearchGiphys(term);
-      this.setState({
-        search: ''
-      });
+      this.props.fetchSearchGiphys(term); // this.setState({search: ''})
     }
   }, {
     key: "render",
@@ -258,10 +256,10 @@ function (_React$Component) {
         type: "text",
         value: this.state.search,
         onChange: this.handleChange
-      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("input", {
         type: "submit",
-        onSubmit: this.handleSubmit
-      }, "Submit")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_giphys_index__WEBPACK_IMPORTED_MODULE_1__["default"], {
+        onClick: this.handleSubmit
+      })), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_giphys_index__WEBPACK_IMPORTED_MODULE_1__["default"], {
         giphys: giphys
       }));
     }
